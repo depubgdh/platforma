@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="uz">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="theme-color" content="#100b1e">
+
+    <title>🔆 Demo Platform</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+
+<body>
+    <div class="glow a"></div>
+    <div class="glow b"></div>
+
+    <header>
+        <div class="brand">
+            <span>🔆</span>
+            <div>
+                <b>DEMO</b>
+                <small>VIDEO PLATFORM</small>
+            </div>
+        </div>
+
+        <button id="profile">👤</button>
+    </header>
+
+    <main>
+        <section class="card balance">
+            <div>
+                <small>SIZNING DEMO HISOBINGIZ</small>
+                <h1 id="balance">0.00 🔆</h1>
+                <p>Demo balans · haqiqiy qiymati yo‘q</p>
+            </div>
+            <strong>🔆</strong>
+        </section>
+
+        <section class="card">
+            <div class="heading">
+                <div>
+                    <small>TAVSIYA ETILGAN</small>
+                    <h2>Video tomosha qiling</h2>
+                </div>
+                <span class="tag">YouTube</span>
+            </div>
+
+            <div class="player" id="player">
+                <div id="placeholder">
+                    🎬
+                    <small>Video tanlanmoqda...</small>
+                </div>
+            </div>
+
+            <h3 id="videoTitle">Video yuklanmoqda...</h3>
+
+            <p class="muted">
+                Video ixtiyoriy. YouTube tomoshasi uchun demo mukofot berilmaydi.
+            </p>
+
+            <button class="primary" id="start">
+                ▶ VIDEONI BOSHLASH
+            </button>
+
+            <button class="secondary" id="next">
+                Boshqa video ↻
+            </button>
+        </section>
+
+        <section class="card">
+            <div class="heading">
+                <div>
+                    <small>MUKOFOTLI FAOLIYAT</small>
+                    <h2>Topshiriqlar</h2>
+                </div>
+                🎯
+            </div>
+
+            <div id="tasks">Yuklanmoqda...</div>
+        </section>
+
+        <section class="card">
+            <div class="heading">
+                <div>
+                    <small>DEMO O‘YIN</small>
+                    <h2>Bulldrop</h2>
+                </div>
+                🎮
+            </div>
+
+            <p class="muted">
+                Demo rejimda o‘yin interfeysini sinab ko‘ring.
+            </p>
+
+            <button class="primary" id="bulldrop">
+                BULLDROP DEMO
+            </button>
+        </section>
+
+        <section class="card">
+            <div class="heading">
+                <div>
+                    <small>FAOLIYAT</small>
+                    <h2>Hisob tarixi</h2>
+                </div>
+                📜
+            </div>
+
+            <div id="history">Hozircha yozuv yo‘q.</div>
+        </section>
+    </main>
+
+    <nav>
+        <button>⌂<small>Bosh sahifa</small></button>
+        <button id="goTasks">◎<small>Topshiriqlar</small></button>
+        <button id="goBalance">🔆<small>Hisob</small></button>
+        <button id="goProfile">♙<small>Profil</small></button>
+    </nav>
+
+    <div id="toast"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
